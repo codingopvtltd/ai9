@@ -2,21 +2,20 @@
 <html lang="en-US">
    <head>
       <meta charset="utf-8" />
-      <!-- <link rel="shortcut icon" href="assets/images/favicon.ico" /> -->
+      <!-- <link rel="shortcut icon" href="images/favicon.ico" /> -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
       <title>AI-9</title>
       <meta name="description" content="" />
       <meta name="keywords" content="" />
-      <link rel="icon" href="assets/images/icon.png" type="image/png" sizes="16x16">
+      <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="" />
-      <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css" /> -->
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-      <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
-      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/fontawesome-all.css" />
-      <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
-      <link rel="stylesheet" type="text/css" href="assets/css/select2-bootstrap4.css" />
+      <link rel="stylesheet" type="text/css" href="css/landing.css" />
+
+
+
+
+
    </head>
    <body>
       <!--wrapper-->
@@ -24,7 +23,7 @@
          <div class="header-menu">
             <div class="container-fluid">
                <nav class="navbar navbar-expand-lg fixed-top">
-                  <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/images/logo.png" alt=""></a>
+                  <a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt=""></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -62,17 +61,17 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-4 items">
-                     <img class="img-fluid" src="assets/images/icon-01.png" alt="">
+                     <img class="img-fluid" src="images/icon-01.png" alt="">
                      <h5>Faster Compliance</h5>
                      <p>Use our AI-engine and process each I-9 in as little as 135 second</p>
                   </div>
                   <div class="col-md-4 items">
-                     <img class="img-fluid" src="assets/images/icon-02.png" alt="">
+                     <img class="img-fluid" src="images/icon-02.png" alt="">
                      <h5>Reduce Errors</h5>
                      <p>Our intelligent system is built to learn and designed to reduce manual costs</p>
                   </div>
                   <div class="col-md-4 items">
-                     <img class="img-fluid" src="assets/images/icon-03.png" alt="">
+                     <img class="img-fluid" src="images/icon-03.png" alt="">
                      <h5>Reduce Time</h5>
                      <p>By automated examination of I-9 rules and forms; our engine reduces the need for staff to conduct manual audits</p>
                   </div>
@@ -86,14 +85,14 @@
                <div class="row">
                   <div class="col-md-6 graphic">
                      <div class="">
-                        <img class="img-fluid" src="assets/images/graphic-01.png" alt="">
+                        <img class="img-fluid" src="images/graphic-01.png" alt="">
                      </div>
                   </div>
                   <div class="col-md-6 introduction">
-                     <img class="img-fluid" src="assets/images/graphic-04.png" alt="">
+                     <img class="img-fluid" src="images/graphic-04.png" alt="">
                      <h4 class="mt-4">Fast, Accurate, Low Cost AI-driven Pathway to I-9 Compliance.</h4>
                      <p>AI-9 uses pioneering deep learning, machine learning, and Natural Language Processing (NLP) algorithms to work for HR professionals. Our rapid assessment solution works with hand-written, scanned forms just as easily as with electronically completed I-9's and recognizes issues with remarkable accuracy. Our solutions can process high volumes of I-9's daily without compromising precision.</p>
-                     <!-- <a href="" class="text-left d-block">Inspect Our Features<img src="assets/images/graphic-05.png" class="features-img" alt=""></a> -->
+                     <!-- <a href="" class="text-left d-block">Inspect Our Features<img src="images/graphic-05.png" class="features-img" alt=""></a> -->
                   </div>
                </div>
             </div>
@@ -107,7 +106,7 @@
                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt augue et fringilla dapibus.</h3>
                     </div>
                     <div class="col-md-6">
-                        <img class="img-fluid" src="assets/images/bg-layer.jpg" alt="">
+                        <img class="img-fluid" src="images/bg-layer.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -116,7 +115,7 @@
          <!--scenarios-->
          <!-- <div class="scenarios">
             <div class="container">
-                <h2><img class="img-fluid" src="assets/images/graphic-02.png" alt=""></h2>
+                <h2><img class="img-fluid" src="images/graphic-02.png" alt=""></h2>
                 <p>Curabitur hendrerit, risus eu maximus bibendum, elit lectus ultrices lectus, eu porttitor nunc nisl in mi. Maecenas vitae ullamcorper massa. Mauris quis magna libero. Quisque at sagittis odio. Donec sagittis et dolor non pharetra.</p>
             </div>
             </div> -->
@@ -128,7 +127,7 @@
                 <div class="row">
                     <div class="col-md-6 items mb-5">
                         <div class="itemWrap">
-                            <div class="image"><img class="img-fluid" src="assets/images/icon-04.png" alt=""></div>
+                            <div class="image"><img class="img-fluid" src="images/icon-04.png" alt=""></div>
                             <div class="info">
                                 <h4>Banking and Finance</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt augue et fringilla dapibus.</p>
@@ -137,7 +136,7 @@
                     </div>
                     <div class="col-md-6 items mb-5">
                         <div class="itemWrap">
-                            <div class="image"><img class="img-fluid" src="assets/images/icon-05.png" alt=""></div>
+                            <div class="image"><img class="img-fluid" src="images/icon-05.png" alt=""></div>
                             <div class="info">
                                 <h4>Government</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt augue et fringilla dapibus.</p>
@@ -146,7 +145,7 @@
                     </div>
                     <div class="col-md-6 items">
                         <div class="itemWrap">
-                            <div class="image"><img class="img-fluid" src="assets/images/icon-06.png" alt=""></div>
+                            <div class="image"><img class="img-fluid" src="images/icon-06.png" alt=""></div>
                             <div class="info">
                                 <h4>Healthcare</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt augue et fringilla dapibus.</p>
@@ -155,7 +154,7 @@
                     </div>
                     <div class="col-md-6 items">
                         <div class="itemWrap">
-                            <div class="image"><img class="img-fluid" src="assets/images/icon-07.png" alt=""></div>
+                            <div class="image"><img class="img-fluid" src="images/icon-07.png" alt=""></div>
                             <div class="info">
                                 <h4>Insurance</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt augue et fringilla dapibus.</p>
@@ -168,7 +167,7 @@
          <!--industryDocuments-->
          <!--stories-->
          <!-- <div class="stories">
-            <h2><img src="assets/images/graphic-03.png" alt=""></h2>
+            <h2><img src="images/graphic-03.png" alt=""></h2>
             <div class="container">
                 <div class="testimonial mt-5">
                     <div id="testimonial" class="carousel slide" data-ride="carousel">
@@ -179,21 +178,21 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="img-fluid" src="assets/images/testimonial-01.png" alt="">
+                                <img class="img-fluid" src="images/testimonial-01.png" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt augue et fringilla dapibus. Quisque sapien est, dictum sit amet aliquet sed, ornare sit amet massa. Phasellus pulvinar eget nisl nec faucibus. Vestibulum
                                     non dui in nulla ullamcorper volutpat. Nulla facilisi. Aliquam congue elementum neque, eu euismod nisl condimentum ac. Curabitur gravida eros fringilla nibh gravida commodo. Nulla hendrerit non tellus ut hendrerit.</p>
                                 <h5>Brian Smith</h5>
                                 <h6>Senior Manager</h6>
                             </div>
                             <div class="carousel-item">
-                                <img class="img-fluid" src="assets/images/testimonial-01.png" alt="">
+                                <img class="img-fluid" src="images/testimonial-01.png" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt augue et fringilla dapibus. Quisque sapien est, dictum sit amet aliquet sed, ornare sit amet massa. Phasellus pulvinar eget nisl nec faucibus. Vestibulum
                                     non dui in nulla ullamcorper volutpat. Nulla facilisi. Aliquam congue elementum neque, eu euismod nisl condimentum ac. Curabitur gravida eros fringilla nibh gravida commodo. Nulla hendrerit non tellus ut hendrerit.</p>
                                 <h5>Brian Smith</h5>
                                 <h6>Senior Manager</h6>
                             </div>
                             <div class="carousel-item">
-                                <img class="img-fluid" src="assets/images/testimonial-01.png" alt="">
+                                <img class="img-fluid" src="images/testimonial-01.png" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt augue et fringilla dapibus. Quisque sapien est, dictum sit amet aliquet sed, ornare sit amet massa. Phasellus pulvinar eget nisl nec faucibus. Vestibulum
                                     non dui in nulla ullamcorper volutpat. Nulla facilisi. Aliquam congue elementum neque, eu euismod nisl condimentum ac. Curabitur gravida eros fringilla nibh gravida commodo. Nulla hendrerit non tellus ut hendrerit.</p>
                                 <h5>Brian Smith</h5>
@@ -274,7 +273,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <img class="img-fluid" src="assets/images/logo-footer.png" alt="">
+                     <img class="img-fluid" src="images/logo-footer.png" alt="">
                      <div class="col-md-12">
                         <a href="https://www.onesmarter.com/" class="one-link">onesmarter.com</a>
                      </div>
@@ -323,13 +322,9 @@
             </div>
          </div>
       </div>
-      <!--/wrapper-->
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="assets/js/jquery-3.2.1.min.js"></script>
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/select2.min.js"></script>
-      <script src="assets/js/custom.js"></script>
+
+
+
+      <script src="js/landing.js"></script>
    </body>
 </html>

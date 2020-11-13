@@ -16,10 +16,12 @@ mix.js('resources/js/landing.js', 'public/js');
 
 mix.copy('resources/images/', 'public/images/');
 mix.copy('resources/webfonts/', 'public/webfonts/');
+mix.copy('resources/fonts/', 'public/fonts/');
+mix.copy('resources/fontawesome/', 'public/fontawesome/');
 
 
 mix.styles([
-    
+
     'resources/css/bootstrap.css',
     'resources/css/animate.css',
     'resources/css/mCustomScrollbar.min.css',
@@ -36,12 +38,17 @@ mix.styles([
 ], 'public/css/app.css');
 
 mix.styles([
-    
+    'resources/css/style.css',
+    'resources/css/custom-front-end.css',
+    'resources/css/fontawsome/css/fontawesome-all.css',
     'resources/css/bootstrap.css',
     'resources/css/select2.css',
-    'resources/css/select2-bootstrap.css',
-    'resources/css/custom-front-end.css',
-    'resources/css/owl.carousel.min.css',
-    'resources/css/owl.theme.default.min.css',
-    'resources/css/fontawsome/css/fontawesome-all.css'
+    'resources/css/select2-bootstrap.css'
+
+
+
+
+
 ], 'public/css/landing.css');
+
+

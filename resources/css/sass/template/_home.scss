@@ -1,0 +1,120 @@
+// SERVICES
+.services {
+  width: 100%;
+  float: left;
+  background: #e0edfd;
+  padding: 3rem 0;
+  .wrapContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    .items {
+      text-align: center;
+      img {
+        margin-bottom: 1rem;
+      }
+    }
+    @include media-max(567px){
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+// FEATURED
+.featured {
+  width: 100%;
+  float: left;
+  padding: 3rem 0;
+  .wrapContainer {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-column-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    @include media-max(567px){
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.featuredBanner {
+  width: 100%;
+  float: left;
+  padding: 3rem 0;
+  background: #0cbaef;
+  color: #fff;
+  .wrapContainer {
+    display: grid;
+    grid-template-columns: 40%;
+    .text {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.scenarios {
+  width: 100%;
+  float: left;
+  padding: 3rem 0;
+  text-align: center;
+  .wrapContainer {
+    text-align: center;
+  }
+}
+
+.industryDocuments {
+  width: 100%;
+  float: left;
+  padding: 3rem 0;
+  background: #f8f8f9;
+  color: #4d4d4d;
+  h3 {
+    margin-bottom: 3rem;
+  }
+  .wrapContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    .items {
+      position: relative;
+      .itemWrap {
+        display: grid;
+        grid-template-columns: 88px auto;
+        grid-column-gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        .info h4 {
+          font-size: 1.25rem;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+}
+
+.stories {
+  width: 100%;
+  float: left;
+  padding: 3rem 0;
+  text-align: center;
+  .wrapContainer {
+    text-align: center;
+    .testimonial {
+      text-align: center;
+      img {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+      h5 span {
+        display: block;
+        font-size: 0.875rem;
+        color: #919395;
+        font-weight: 400;
+        padding-top: .25rem;
+      }
+    }
+  }
+}
