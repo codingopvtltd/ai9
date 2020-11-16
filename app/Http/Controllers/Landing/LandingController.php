@@ -29,6 +29,7 @@ class LandingController
             'city'=> $request->city,
             'country'=> $request->country,
             'phone_number'=>$request->phone_number,
+            'project_details'
             'status' => 'active'
         ]);
 

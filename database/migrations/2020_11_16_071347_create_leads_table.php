@@ -22,6 +22,7 @@ class CreateLeadsTable extends Migration
             $table->string('city')->nullable();
             $table->string('country')->nullable();
             $table->string('phone_number')->nullable();
+            $table->string('project_details')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
         });
