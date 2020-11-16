@@ -46245,7 +46245,52 @@ __webpack_require__(/*! ./bundle */ "./resources/js/bundle.js");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(function () {});
+$(function () {
+  $.fn.removeReadyonly = function () {
+    this.removeClass("view-form");
+    this.attr("readonly", false);
+    this.children().attr("disabled", false);
+    return true;
+  };
+
+  $.fn.addReadyonly = function () {
+    this.addClass("view-form");
+    this.attr("readonly", true);
+    this.children().attr("disabled", true);
+    return true;
+  };
+
+  $(document).on("click", ".leadView", function (e) {
+    e.preventDefault();
+    $(".form-element").addReadyonly();
+    var lead_id = $(this).attr('data-id');
+    $.ajax({
+      url: "lead-view",
+      type: "POST",
+      data: {
+        "_token": csrf_token,
+        lead_id: lead_id
+      },
+      success: function success(response) {
+        console.log(response);
+
+        if (response.status == 'success') {
+          $("#first_name").val(response.first_name);
+          $("#last_name").val(response.last_name);
+          $("#email").val(response.email);
+          $("#company").val(response.company);
+          $("#city").val(response.city);
+          $("#country").val(response.country);
+          $("#phone_number").val(response.phone_number);
+          $("#project_details").val(response.project_details);
+        } else if (response.status == 'failed') {}
+      },
+      error: function error(xhr) {
+        console.log(xhr);
+      }
+    });
+  });
+});
 
 /***/ }),
 
@@ -46329,7 +46374,7 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/ai9/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\ai-9\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })

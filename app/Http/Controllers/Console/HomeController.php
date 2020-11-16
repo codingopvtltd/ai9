@@ -29,5 +29,12 @@ class HomeController
         $data['leads']     =  ContactLeads::where('status','=','active')->get();
         return view('console.leads-listing')->with($data);
     }
+    public function leadView(Request $request)
+    {
+        $lead_data =    ContactLeads::where([['id','=',$request->lead_id],['status','like','active']])->first();
+        $lead_data->status = 'success';
+        return response()->json($lead_data);
+
+    }
 
 }

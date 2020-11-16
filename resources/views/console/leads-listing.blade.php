@@ -13,7 +13,7 @@
                                 {{-- <h5 class="theme-text m-0">Dashboard</h5> --}}
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                    <li class="breadcrumb-item active" aria-current="page">Listing</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Leads</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -71,23 +71,18 @@
                                                             </th>
                                                             <th><strong>Email</strong>
                                                             </th>
-                                                            <th><strong>Company</strong>
-                                                            </th>
-                                                            <th><strong>City</strong>
-                                                            </th>
                                                             <th><strong>Phone Number</strong>
                                                             </th>
                                                     </thead>
                                                     <tbody class="t-tbody">
+                                                        @csrf
                                                         @if(!empty($leads))
                                                         @foreach($leads as $key => $leads_data)
-                                                        <tr>
+                                                        <tr class="leadView" data-id={{$leads_data->id}}>
                                                             <td>{{$leads_data->id}}</td>
                                                             <td>{{$leads_data->first_name}}</td>
                                                             <td>{{$leads_data->last_name}}</td>
                                                             <td>{{$leads_data->email}}</td>
-                                                            <td>{{$leads_data->company}}</td>
-                                                            <td>{{$leads_data->city}}</td>
                                                             <td>{{$leads_data->phone_number}}</td>
 
                                                         </tr>
@@ -103,10 +98,10 @@
                                     <div class="window-right-action">
                                         <div class="window-right-action-inner">
                                             <div class="title">
-                                                <h5><span class="action-text-span"></span> Category</h5>
+                                                <h5><span class="action-text-span"></span> Leads</h5>
                                             </div>
                                             <div class="content-action-button d-flex align-items-center justify-content-end">
-                                                <button class="btn-common edit-button">
+                                                {{-- <button class="btn-common edit-button">
                                                     <span class="icon-svg"><i class="fal fa-pen"></i></span>
                                                     <span>Edit</span>
                                                 </button>
@@ -121,7 +116,7 @@
                                                 <button class="btn-common close-window">
                                                     <span class="icon-svg"><i class="fal fa-times"></i></span>
                                                     <span>Cancel</span>
-                                                </button>
+                                                </button> --}}
                                                 <span class="close-window">
                                                     <svg class="icon-svg" focusable="false" viewBox="0 0 32 32">
                                                         <path d="M2,14.5h18.4l-7.4-7.4c-0.6-0.6-0.6-1.5,0-2.1c0.6-0.6,1.5-0.6,2.1,0l10,10c0.6,0.6,0.6,1.5,0,2.1l-10,10c-0.3,0.3-0.7,0.4-1.1,0.4c-0.4,0-0.8-0.1-1.1-0.4c-0.6-0.6-0.6-1.5,0-2.1l7.4-7.4H2c-0.8,0-1.5-0.7-1.5-1.5C0.5,15.3,1.2,14.5,2,14.5z M28,3.5C28,2.7,28.7,2,29.5,2S31,2.7,31,3.5v25c0,0.8-0.7,1.5-1.5,1.5S28,29.3,28,28.5V3.5z"></path>
@@ -155,20 +150,58 @@
                                                 <form id="form-view" enctype="multipart/form-data" role="form" method="POST" data-controller="category-actions">
                                                 @csrf
                                                <!--  <input type="hidden" id="category_id" name="category_id"> -->
+                                               <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>First Name</label>
+                                                            <input type="text" class="form-control view-form form-element first_name" id="first_name" name="first_name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Last Name</label>
+                                                            <input type="text" class="form-control view-form form-element last_name" id="last_name" name="last_name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Email </label>
+                                                            <input type="text" class="form-control view-form form-element email" id="email" name="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Company</label>
+                                                            <input type="text" class="form-control view-form form-element company" id="company" name="company">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>City</label>
+                                                            <input type="text" class="form-control view-form form-element city" id="city" name="city">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Country</label>
+                                                            <input type="text" class="form-control view-form form-element country" id="country" name="country">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                     <div class="col-12 p-0">
                                                         <div class="form-group">
-                                                            <label>Category Name *</label>
-                                                            <input type="text" class="form-control view-form form-element category_name" id="category_name" name="category_name" placeholder="Category Name">
+                                                            <label>Phone Number</label>
+                                                            <input type="text" class="form-control view-form form-element phone_number" id="phone_number" name="phone_number">
                                                         </div>
                                                     </div>
                                                     <div class="col-12 p-0">
                                                         <div class="form-group">
-                                                        <label>Category Image *</label>
-                                                        <div class="image-upload-placeholder"><img src="" width="150" height="150" class="category_image" style="display: none;"></div>
-                                                        <div class="image-upload-element">
-
-                                                            <input type="file" class="form-control view-form form-element category_image" id="category_image" name="category_image">
-                                                        </div>
+                                                            <label>Project Details</label>
+                                                            <textarea class="form-control view-form form-element project_details" id="project_details" name="project_details"></textarea>
                                                         </div>
                                                     </div>
                                                 </form>

@@ -256,7 +256,7 @@
                            </div>
                            <div class="form-group col-md-12">
                               <label>Phone Number</label>
-                              <input type="text" class="form-control" id="phone_number" name="phone_number">
+                              <input type="text" class="form-control number_only" id="phone_number" name="phone_number">
                            </div>
                            <div class="form-group col-md-12">
                               <label>Project Details</label>

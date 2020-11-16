@@ -2,7 +2,7 @@
                         <ul class="menu-list">
                             <li>
                                 <a href=""> <i class="fal fa-list-alt"></i>
-                                    <span class="menu-item">List</span>
+                                    <span class="menu-item">Leads</span>
                                 </a>
                             </li>
 
@@ -10,10 +10,10 @@
                     </div>
                     <div class="menu-side-single">
                         <ul class="menu-list mt-0">
-                            <li>
+                            {{-- <li>
                                 <a href="">
                                     <span class="menu-item">Settings</span> <i class="fal fa-cog"></i>
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>

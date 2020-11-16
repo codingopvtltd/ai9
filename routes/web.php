@@ -29,7 +29,7 @@ Route::get('/logout', function () {
 Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/console', 'Console\HomeController@home')->name('console');
-
+    Route::post('/lead-view', 'Console\HomeController@leadView')->name('lead-view');
 
 
 });

@@ -24172,10 +24172,8 @@ $(function () {
     e.preventDefault(); //console.log($("#checkbox").val());
 
     if ($('input[type="checkbox"]').is(":checked")) {
-      alert('asdas');
       $(".check-terms").hide();
     } else if ($('input[type="checkbox"]').is(":not(:checked)")) {
-      alert('222');
       $(".check-terms").show();
     }
 
@@ -24212,6 +24210,9 @@ $(function () {
         });
       }
     });
+  });
+  $('.number_only').bind('keypress', function (e) {
+    return e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57) ? false : true;
   });
 });
 
@@ -24287,7 +24288,7 @@ __webpack_require__(/*! ./bundle-frontend */ "./resources/js/bundle-frontend.js"
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/ai9/resources/js/landing.js */"./resources/js/landing.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\ai-9\resources\js\landing.js */"./resources/js/landing.js");
 
 
 /***/ })
