@@ -5,3 +5,4 @@ require('bootstrap');
 require('select2');
 
 require('./custom-frontend');
+require('./bundle-frontend');

@@ -221,41 +221,42 @@
                      <h6>Tell us more about your needs and we will be happy to assist you.</h6>
                   </div>
                   <div class="col-md-12">
-                     <form>
+                     <form id="request-submit" role="form" method="POST">
+                        @csrf
                         <div class="form-row request-form">
                            <div class="form-group col-md-6">
                               <label>First Name</label>
-                              <input type="text" class="form-control" id="">
+                              <input type="text" class="form-control" id="first_name" name="first_name">
                            </div>
                            <div class="form-group col-md-6">
                               <label>Last Name</label>
-                              <input type="text" class="form-control" id="">
+                              <input type="text" class="form-control" id="last_name" name="last_name">
                            </div>
                            <div class="form-group col-md-6">
                               <label>Email</label>
-                              <input type="email" class="form-control" id="">
+                              <input type="email" class="form-control" id="email" name="email">
                            </div>
                            <div class="form-group col-md-6">
                               <label>Company</label>
-                              <input type="text" class="form-control" id="">
+                              <input type="text" class="form-control" id="company" name="company">
                            </div>
                            <div class="form-group col-md-6">
                               <label>City</label>
-                              <input type="text" class="form-control" id="">
+                              <input type="text" class="form-control" id="city" name="city">
                            </div>
                            <div class="form-group col-md-6">
-                              <label>Email</label>
-                              <select class="form-control js-example-basic-multiple" name="" id="">
-                                 <option value="">India</option>
+                              <select class="form-control js-example-basic-multiple" name="country" id="country">
+                                <option value="">Select</option>
+                                <option value="India">India</option>
                               </select>
                            </div>
                            <div class="form-group col-md-12">
                               <label>Phone Number</label>
-                              <input type="text" class="form-control" id="">
+                              <input type="text" class="form-control" id="phone_number" name="phone_number">
                            </div>
                            <div class="form-group col-md-12">
                               <label>Project Details</label>
-                              <textarea class="form-control" id=""></textarea>
+                              <textarea class="form-control" id="project_details" name="project_details"></textarea>
                            </div>
                         </div>
                         <label class="custom-control custom-checkbox text-left">
@@ -263,7 +264,7 @@
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-label">I have read and agree with the Privacy policy and the Cookie policy.</span>
                         </label>
-                        <button type="submit" class="btn btn-primary">Send Request</button>
+                        <button type="submit" id="send-request" class="btn btn-primary">Send Request</button>
                      </form>
                   </div>
                </div>
@@ -322,7 +323,9 @@
             </div>
          </div>
       </div>
-
+    <script>
+        var csrf_token = "{{ csrf_token() }}";
+    </script>
 
 
       <script src="js/landing.js"></script>

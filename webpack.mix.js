@@ -46,9 +46,6 @@ mix.styles([
     'resources/css/select2-bootstrap.css'
 
 
-
-
-
 ], 'public/css/landing.css');
 
 
