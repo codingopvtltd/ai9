@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Artisan;
 Route::get('/', 'Landing\LandingController@home')->name('home');
 Route::post('/contact-actions', 'Landing\LandingController@contactActions')->name('contact-actions');
 
+// Route::get('/send-mail', 'Email\EmailController@sendEmail')->name('send-mail');
 
 Route::get('/logout', function () {
 	Auth::logout();

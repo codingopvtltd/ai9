@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Landing;
 use Illuminate\Http\Request;
 use DB;
 use App\ContactLeads;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactForm;
+
 class LandingController
 {
 
@@ -34,13 +37,21 @@ class LandingController
             'project_details'=>$request->project_details,
             'status' => 'active'
         ]);
+        $to_email = "josemy@codingo.co";
 
-        return response()->json(['status'=>'success']);
+        Mail::to($to_email)->send(new ContactForm);
 
+        if(Mail::failures() != 0) {
+
+            return response()->json(['status'=>'success']);
+        }
+
+        else {
+            return response()->json(['status'=>'Failed']);
         }
 
 
-
+        }
     }
 
 }
