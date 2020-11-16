@@ -23,7 +23,7 @@ Route::get('/logout', function () {
 
 
 Route::get('/', 'Landing\LandingController@home')->name('home');
-Route::post('/contact-actions', 'LandingController@contactActions')->name('contact-actions');
+Route::post('/contact-actions', 'Landing\LandingController@contactActions')->name('contact-actions');
 
 
 Route::get('/clear-cache', function () {

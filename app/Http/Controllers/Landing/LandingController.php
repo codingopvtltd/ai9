@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Landing;
 use Illuminate\Http\Request;
 use DB;
-use ContactLeads;
+use App\ContactLeads;
 class LandingController
 {
 
@@ -18,7 +18,7 @@ class LandingController
         {
         $request->validate([
             'first_name' => 'required',
-            'description' => 'required'
+            'email' => 'required'
         ]);
 
         $task = ContactLeads::create([
@@ -29,7 +29,7 @@ class LandingController
             'city'=> $request->city,
             'country'=> $request->country,
             'phone_number'=>$request->phone_number,
-            'project_details'
+            'project_details',
             'status' => 'active'
         ]);
 
