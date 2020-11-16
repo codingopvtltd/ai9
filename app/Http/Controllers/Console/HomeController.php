@@ -4,9 +4,7 @@ namespace App\Http\Controllers\Console;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use App\Category;
-use App\Product;
-use App\SubCategory;
+use App\ContactLeads;
 use DB;
 
 class HomeController
@@ -28,14 +26,8 @@ class HomeController
      */
     public function home()
     {
-        return view('console.category');
+        $data['leads']     =  ContactLeads::where('status','=','active')->get();
+        return view('console.leads-listing')->with($data);
     }
-    public function category()
-    {
-        return view('console.category');
-    }
-    public function settings()
-    {
-        return view('console.settings');
-    }
+
 }

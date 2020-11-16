@@ -1,6 +1,10 @@
 $(function() {
     $('#send-request').on("click", function(e) {
         e.preventDefault();
+        // if(!this.form.checkbox.checked)
+        // {
+        //     $("#check-terms").show();
+        // }
         formData = new FormData($("#request-submit")[0]);
 
         formData.set('method','save');
@@ -19,10 +23,9 @@ $(function() {
             success: function(response) {
                 console.log(response);
                 if (response.status == 'success') {
-                    // toasterMessage('Learning Objectives Created Succesfully', 'success');
-                    // setTimeout(function() {
-                    //     window.location.reload();
-                    // }, 1000);
+                    $("#request-save").hide();
+                    $("#request-mesage").hide();
+                    $("#sucess-msg").show();
                 } else if (response.status == 'failed') {
                     // toasterMessage('Failed To Create', 'error');
                 }
@@ -32,16 +35,16 @@ $(function() {
 
 
 
-            //   $('.error_custom').remove();
-            //       $.each(xhr.responseJSON.errors, function(key,value) {
+              $('.error_custom').remove();
+                  $.each(xhr.responseJSON.errors, function(key,value) {
 
-            //         $('#'+key).after('<div class="error_custom">'+value+'</div>');
-            //         setTimeout(function() {
-            //           $('.error_custom').fadeOut('fast');
+                    $('#'+key).after('<div class="error_custom">'+value+'</div>');
+                    setTimeout(function() {
+                      $('.error_custom').fadeOut('fast');
 
-            //       }, 5000);
+                  }, 5000);
 
-            //       });
+                  });
 
 
 

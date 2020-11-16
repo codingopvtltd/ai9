@@ -15,16 +15,23 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
+
+Route::get('/', 'Landing\LandingController@home')->name('home');
+Route::post('/contact-actions', 'Landing\LandingController@contactActions')->name('contact-actions');
+
+
 Route::get('/logout', function () {
 	Auth::logout();
 	return redirect('/');
 })->name('logout');
 
+Route::group(['middleware' => ['auth']], function () {
+
+    Route::get('/console', 'Console\HomeController@home')->name('console');
 
 
-Route::get('/', 'Landing\LandingController@home')->name('home');
-Route::post('/contact-actions', 'Landing\LandingController@contactActions')->name('contact-actions');
 
+});
 
 Route::get('/clear-cache', function () {
     Artisan::call('cache:clear');
@@ -40,7 +47,7 @@ Route::post('/git-webhook', function () {
     shell_exec( 'git pull origin master' );
     return "shell executed";
 });
-
+Auth::routes();
 
 
 

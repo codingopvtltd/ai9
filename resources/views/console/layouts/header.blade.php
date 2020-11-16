@@ -42,8 +42,8 @@
                                             <div class="user-small">
                                                 <img class="img-fluid" src="{{asset('images/logo/logo.png')}}" alt="">
                                             </div>
-                                            <h5>Rathin Rajendran</h5>
-                                            <h6>rethin@codingo.co</h6>
+                                            <h5>admin</h5>
+                                            <h6>admin@ai9.com</h6>
                                             <div class="option-block">
                                                 <ul>
                                                     <!-- <li><a href=""><i class="fal fa-home"></i>Home</a></li>

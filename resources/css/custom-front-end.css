@@ -538,3 +538,10 @@ body {
 .select2-results__option {
     padding: 6px 10px !important;
 }
+
+.error_custom {
+    font-size: 12px;
+    color: #ff7f7f;
+    padding-top: 2px;
+    padding-left: 5px;
+}

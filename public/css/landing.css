@@ -789,6 +789,14 @@ body {
 .select2-results__option {
     padding: 6px 10px !important;
 }
+
+.error_custom {
+    font-size: 12px;
+    color: #ff7f7f;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
 /*!
  * Font Awesome Pro 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)

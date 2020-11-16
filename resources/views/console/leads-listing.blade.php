@@ -60,20 +60,39 @@
                                     <div class="content-table">
                                         <div class="item-table">
                                             <div class="table-responsive custom-responsive">
-                                                <table class="table table-bordered custom-table" id="category-list-table">
+                                                <table class="table table-bordered custom-table data-customTable" id="category-list-table">
                                                     <thead>
                                                         <tr role="row">
                                                             <th><strong>Id</strong>
                                                             </th>
-                                                            <th><strong>Name</strong>
+                                                            <th><strong>First Name</strong>
                                                             </th>
-                                                            <th><strong>Action</strong>
-
+                                                            <th><strong>Last Name</strong>
+                                                            </th>
+                                                            <th><strong>Email</strong>
+                                                            </th>
+                                                            <th><strong>Company</strong>
+                                                            </th>
+                                                            <th><strong>City</strong>
+                                                            </th>
+                                                            <th><strong>Phone Number</strong>
+                                                            </th>
                                                     </thead>
                                                     <tbody class="t-tbody">
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
+                                                        @if(!empty($leads))
+                                                        @foreach($leads as $key => $leads_data)
+                                                        <tr>
+                                                            <td>{{$leads_data->id}}</td>
+                                                            <td>{{$leads_data->first_name}}</td>
+                                                            <td>{{$leads_data->last_name}}</td>
+                                                            <td>{{$leads_data->email}}</td>
+                                                            <td>{{$leads_data->company}}</td>
+                                                            <td>{{$leads_data->city}}</td>
+                                                            <td>{{$leads_data->phone_number}}</td>
+
+                                                        </tr>
+                                                        @endforeach
+                                                        @endif
                                                     </tbody>
                                                 </table>
                                             </div>

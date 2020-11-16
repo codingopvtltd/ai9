@@ -21,7 +21,7 @@
                             <!-- <h1>Codingo</h1> -->
                             <!-- logo Text or Logo -->
                             <div class="login-logo">
-                                <img class="img-fluid" src="images/logo/logo.png" alt="">
+                                <img class="img-fluid" src="images/logo-footer.png" alt="">
                             </div>
                             <h3>Login</h3>
                             <div class="form-group">

@@ -24170,6 +24170,11 @@ module.exports = g;
 $(function () {
   $('#send-request').on("click", function (e) {
     e.preventDefault();
+
+    if (!this.form.checkbox.checked) {
+      $("#check-terms").show();
+    }
+
     formData = new FormData($("#request-submit")[0]);
     formData.set('method', 'save');
     formData.set('_token', csrf_token);
@@ -24186,20 +24191,21 @@ $(function () {
       success: function success(response) {
         console.log(response);
 
-        if (response.status == 'success') {// toasterMessage('Learning Objectives Created Succesfully', 'success');
-          // setTimeout(function() {
-          //     window.location.reload();
-          // }, 1000);
+        if (response.status == 'success') {
+          $("#request-save").hide();
+          $("#request-mesage").hide();
+          $("#sucess-msg").show();
         } else if (response.status == 'failed') {// toasterMessage('Failed To Create', 'error');
         }
       },
-      error: function error(xhr) {//   $('.error_custom').remove();
-        //       $.each(xhr.responseJSON.errors, function(key,value) {
-        //         $('#'+key).after('<div class="error_custom">'+value+'</div>');
-        //         setTimeout(function() {
-        //           $('.error_custom').fadeOut('fast');
-        //       }, 5000);
-        //       });
+      error: function error(xhr) {
+        $('.error_custom').remove();
+        $.each(xhr.responseJSON.errors, function (key, value) {
+          $('#' + key).after('<div class="error_custom">' + value + '</div>');
+          setTimeout(function () {
+            $('.error_custom').fadeOut('fast');
+          }, 5000);
+        });
       }
     });
   });

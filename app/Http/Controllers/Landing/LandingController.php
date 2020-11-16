@@ -18,7 +18,9 @@ class LandingController
         {
         $request->validate([
             'first_name' => 'required',
-            'email' => 'required'
+            'email' => 'required|email|unique:users,email',
+            'phone_number' => 'required',
+            'project_details' => 'required'
         ]);
 
         $task = ContactLeads::create([
@@ -29,7 +31,7 @@ class LandingController
             'city'=> $request->city,
             'country'=> $request->country,
             'phone_number'=>$request->phone_number,
-            'project_details',
+            'project_details'=>$request->project_details,
             'status' => 'active'
         ]);
 

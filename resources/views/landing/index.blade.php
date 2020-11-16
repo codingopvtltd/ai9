@@ -216,11 +216,15 @@
          <div class="footer footer-main">
             <div class="container">
                <div class="row">
-                  <div class="col-md-12 mb-5">
+                  <div class="col-md-12 mb-5" id="request-mesage">
                      <h3>Request information</h3>
                      <h6>Tell us more about your needs and we will be happy to assist you.</h6>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-12 mb-5" id="sucess-msg" style="display:none">
+                    <h3>Your Enquiry is successfully submitted.</h3>
+                    <h6>Our team will contact you soon. Thanks</h6>
+                 </div>
+                  <div class="col-md-12" id="request-save">
                      <form id="request-submit" role="form" method="POST">
                         @csrf
                         <div class="form-row request-form">
@@ -263,6 +267,7 @@
                         <input type="checkbox" id="checkbox" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
                         <span class="custom-control-label">I have read and agree with the Privacy policy and the Cookie policy.</span>
+                        <span class="error_custom" id="check-terms" style="display:none">You must agree to the terms first.</span>
                         </label>
                         <button type="submit" id="send-request" class="btn btn-primary">Send Request</button>
                      </form>
