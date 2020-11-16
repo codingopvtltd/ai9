@@ -266,8 +266,8 @@
                         <label class="custom-control custom-checkbox text-left">
                         <input type="checkbox" id="checkbox" class="custom-control-input">
                         <span class="custom-control-indicator"></span>
-                        <span class="custom-control-label">I have read and agree with the Privacy policy and the Cookie policy.</span>
-                        <span class="error_custom" id="check-terms" style="display:none">You must agree to the terms first.</span>
+                        <span class="custom-control-label">I have read and agree with the Privacy policy and the Cookie policy.</span><br />
+                        <span class="check-terms" style="display:none;color:#ff7f7f;">You must agree to the terms first.</span>
                         </label>
                         <button type="submit" id="send-request" class="btn btn-primary">Send Request</button>
                      </form>

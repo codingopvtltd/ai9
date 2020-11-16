@@ -21,7 +21,7 @@ class LandingController
         {
         $request->validate([
             'first_name' => 'required',
-            'email' => 'required|email|unique:users,email',
+            'email' => 'required|email',
             'phone_number' => 'required',
             'project_details' => 'required'
         ]);

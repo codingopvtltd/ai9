@@ -1,10 +1,19 @@
 $(function() {
     $('#send-request').on("click", function(e) {
         e.preventDefault();
-        // if(!this.form.checkbox.checked)
-        // {
-        //     $("#check-terms").show();
-        // }
+
+        //console.log($("#checkbox").val());
+
+
+            if( $('input[type="checkbox"]').is(":checked")){
+                $(".check-terms").hide();
+            }
+            else if( $('input[type="checkbox"]').is(":not(:checked)")){
+                $(".check-terms").show();
+            }
+
+
+
         formData = new FormData($("#request-submit")[0]);
 
         formData.set('method','save');

@@ -24169,10 +24169,14 @@ module.exports = g;
 
 $(function () {
   $('#send-request').on("click", function (e) {
-    e.preventDefault();
+    e.preventDefault(); //console.log($("#checkbox").val());
 
-    if (!this.form.checkbox.checked) {
-      $("#check-terms").show();
+    if ($('input[type="checkbox"]').is(":checked")) {
+      alert('asdas');
+      $(".check-terms").hide();
+    } else if ($('input[type="checkbox"]').is(":not(:checked)")) {
+      alert('222');
+      $(".check-terms").show();
     }
 
     formData = new FormData($("#request-submit")[0]);
@@ -24283,7 +24287,7 @@ __webpack_require__(/*! ./bundle-frontend */ "./resources/js/bundle-frontend.js"
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\ai-9\resources\js\landing.js */"./resources/js/landing.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/ai9/resources/js/landing.js */"./resources/js/landing.js");
 
 
 /***/ })
