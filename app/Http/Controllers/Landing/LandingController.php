@@ -37,9 +37,11 @@ class LandingController
             'project_details'=>$request->project_details,
             'status' => 'active'
         ]);
+        $data = $request->all();
+        //dd($data);
         $to_email = "josemy@codingo.co";
 
-        Mail::to($to_email)->send(new ContactForm);
+        Mail::to($to_email)->send(new ContactForm($data));
 
         if(Mail::failures() != 0) {
 

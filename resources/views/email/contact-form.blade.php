@@ -11,15 +11,17 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-sm-12 m-auto">
-                <h3> Send Email in Laravel 8 Using Mailgun </h3>
-                <p> Hey, </p>
-                <p> Welcome to Programming Fields </p>
-                <p> This is a basic demo for sending email in Laravel 8 using Mailgun. </p>
-                <p> I hope you will enjoy this post. </p>
+                <h3>New Enquiry </h3>
+                <p> Name:-  {{ $first_name ?? '0'}}   {{ $last_name ?? '0' }}</p>
+                <p> Email :- {{ $email ?? '0' }} </p>
+                <p> Company Name :- {{ $company ?? '0'}} </p>
+                <p> City :- {{ $city ?? '0'}} </p>
+                <p> Country :- {{ $country ?? '0'}}</p>
+                <p> Phone Number :- {{$phone_number ?? '0'}} </p>
+                <p> Project Details :- {{$project_details ?? '0'}} </p>
                 <br/>
-                <br/>
-                <p> Best Regards</p>
-                <p> Team, Programming Fields </p>
+                <p> Thank you</p>
+                <p> Name:-  {{ $first_name ?? '0'}}   {{ $last_name ?? '0' }}</p>
             </div>
         </div>
     </div>

@@ -10,15 +10,17 @@ use Illuminate\Queue\SerializesModels;
 class ContactForm extends Mailable
 {
     use Queueable, SerializesModels;
+    public $data;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
+        $this->data = $data;
     }
 
     /**
@@ -28,6 +30,6 @@ class ContactForm extends Mailable
      */
     public function build()
     {
-        return $this->from("ai9@mg.onesmarter.in")->view('email.contact-form');
+        return $this->from("ai9@mg.onesmarter.in")->view('email.contact-form',$this->data);
     }
 }
