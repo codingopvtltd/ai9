@@ -24171,17 +24171,18 @@ $(function () {
   $('#send-request').on("click", function (e) {
     e.preventDefault();
     formData = new FormData($("#request-submit")[0]);
+    formData.set('method', 'save');
+    formData.set('_token', csrf_token);
     console.log(formData);
     $.ajax({
       url: "contact-actions",
       type: "POST",
-      data: {
-        "_token": csrf_token,
-        "method": 'save',
-        type: "POST",
-        data: formData
-      },
+      data: formData,
       dataType: 'json',
+      contentType: false,
+      async: false,
+      cache: false,
+      processData: false,
       success: function success(response) {
         console.log(response);
 
@@ -24276,7 +24277,7 @@ __webpack_require__(/*! ./bundle-frontend */ "./resources/js/bundle-frontend.js"
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\ai-9\resources\js\landing.js */"./resources/js/landing.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/ai9/resources/js/landing.js */"./resources/js/landing.js");
 
 
 /***/ })

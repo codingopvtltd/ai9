@@ -2,16 +2,20 @@ $(function() {
     $('#send-request').on("click", function(e) {
         e.preventDefault();
         formData = new FormData($("#request-submit")[0]);
+
+        formData.set('method','save');
+
+        formData.set('_token',csrf_token);
         console.log(formData);
         $.ajax({
             url: "contact-actions",
             type: "POST",
-            data: {
-                "_token": csrf_token,
-                "method": 'save',
-                type: "POST",
-                data : formData,
-            },dataType: 'json',
+            data: formData,
+            dataType: 'json',
+            contentType: false,
+            async:false,
+            cache: false,
+            processData: false,
             success: function(response) {
                 console.log(response);
                 if (response.status == 'success') {
