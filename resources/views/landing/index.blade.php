@@ -130,7 +130,7 @@
             </div>
          </div>
          <div class="fotter" id="">
-            <img src="assets/images/one-smarter.png" alt="" class="os">
+            <img src="{{asset('images/one-smarter.png')}}" alt="" class="os">
             <div class="contentWrap">
                <div class="item contact text-left">
                   <h2><a href="+9373446241">+ 1 937 344 6241</a></h2>
@@ -166,7 +166,7 @@
                   </button>
                </div>
                <div class="modal-body">
-                  <video width="" height="auto" controls="">
+                  <video height="auto" controls="" autoplay >
                      <source src="{{asset('images/onesmarterLife.mp4')}}" type="video/mp4">
                    </video>
                </div>
