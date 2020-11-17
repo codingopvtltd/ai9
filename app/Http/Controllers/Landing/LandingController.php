@@ -21,20 +21,20 @@ class LandingController
         {
         $request->validate([
             'first_name' => 'required',
-            'email' => 'required|email',
-            'phone_number' => 'required',
-            'project_details' => 'required'
+            'email' => 'required|email'
+            // 'phone_number' => 'required',
+            // 'project_details' => 'required'
         ]);
 
         $task = ContactLeads::create([
             'first_name'  => $request->first_name,
-            'last_name' => $request->last_name,
+            // 'last_name' => $request->last_name,
             'email'=> $request->email,
-            'company'=> $request->company,
-            'city'=> $request->city,
-            'country'=> $request->country,
-            'phone_number'=>$request->phone_number,
-            'project_details'=>$request->project_details,
+            // 'company'=> $request->company,
+            // 'city'=> $request->city,
+            // 'country'=> $request->country,
+            // 'phone_number'=>$request->phone_number,
+            // 'project_details'=>$request->project_details,
             'status' => 'active'
         ]);
         $data = $request->all();

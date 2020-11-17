@@ -30,6 +30,6 @@ class ContactForm extends Mailable
      */
     public function build()
     {
-        return $this->from("ai9@mg.onesmarter.in")->view('email.contact-form',$this->data);
+        return $this->view('email.contact-form',$this->data);
     }
 }

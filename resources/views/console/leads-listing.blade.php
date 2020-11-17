@@ -65,14 +65,14 @@
                                                         <tr role="row">
                                                             <th><strong>Id</strong>
                                                             </th>
-                                                            <th><strong>First Name</strong>
+                                                            <th><strong>Name</strong>
                                                             </th>
-                                                            <th><strong>Last Name</strong>
-                                                            </th>
+                                                            {{-- <th><strong>Last Name</strong>
+                                                            </th> --}}
                                                             <th><strong>Email</strong>
                                                             </th>
-                                                            <th><strong>Phone Number</strong>
-                                                            </th>
+                                                            {{-- <th><strong>Phone Number</strong>
+                                                            </th> --}}
                                                     </thead>
                                                     <tbody class="t-tbody">
                                                         @csrf
@@ -81,9 +81,9 @@
                                                         <tr class="leadView" data-id={{$leads_data->id}}>
                                                             <td>{{$leads_data->id}}</td>
                                                             <td>{{$leads_data->first_name}}</td>
-                                                            <td>{{$leads_data->last_name}}</td>
+                                                            {{-- <td>{{$leads_data->last_name}}</td> --}}
                                                             <td>{{$leads_data->email}}</td>
-                                                            <td>{{$leads_data->phone_number}}</td>
+                                                            {{-- <td>{{$leads_data->phone_number}}</td> --}}
 
                                                         </tr>
                                                         @endforeach
@@ -159,12 +159,18 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
+                                                            <label>Email </label>
+                                                            <input type="text" class="form-control view-form form-element email" id="email" name="email">
+                                                        </div>
+                                                    </div>
+                                                    {{-- <div class="col-md-6">
+                                                        <div class="form-group">
                                                             <label>Last Name</label>
                                                             <input type="text" class="form-control view-form form-element last_name" id="last_name" name="last_name">
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
-                                                <div class="row">
+                                                {{-- <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label>Email </label>
@@ -203,7 +209,7 @@
                                                             <label>Project Details</label>
                                                             <textarea class="form-control view-form form-element project_details" id="project_details" name="project_details"></textarea>
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                 </form>
                                             </div>
                                         </div>

@@ -46260,6 +46260,10 @@ $(function () {
     return true;
   };
 
+  $(document).on("click", ".custom-table tbody tr", function (e) {
+    $('.custom-table tbody tr').removeClass("tractive border-blue");
+    $(this).addClass("tractive border-blue");
+  });
   $(document).on("click", ".leadView", function (e) {
     e.preventDefault();
     $(".form-element").addReadyonly();
