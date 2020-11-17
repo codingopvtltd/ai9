@@ -569,15 +569,15 @@ body {
 }
 
 .faster-svg {
-    background-image: url('../../../ai9/public/images/speedometer.svg');
+    background-image: url('../../../public/images/speedometer.svg');
 }
 
 .error-svg {
-    background-image: url('../../../ai9/public/images/low-price.svg');
+    background-image: url('../../../public/images/low-price.svg');
 }
 
 .time-svg {
-    background-image: url('../../../ai9/public/images/line-chart.svg');
+    background-image: url('../../../public/images/line-chart.svg');
 }
 
 .services {
@@ -702,7 +702,7 @@ body {
 }
 
 .video-block {
-    background: url('../../../ai9/public/images/life-at-ms.jpg') no-repeat center center;
+    background: url('../../../public/images/life-at-ms.jpg') no-repeat center center;
     background-size: cover;
 }
 
