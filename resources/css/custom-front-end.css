@@ -702,7 +702,7 @@ body {
 }
 
 .video-block {
-    background: url('../../../public/images/life-at-ms.jpg') no-repeat center center;
+    background: url('../images/life-at-ms.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -796,3 +796,13 @@ body {
 #videoModal video {
     max-width: 100%;
 }
+
+
+/* .logo-navbar {
+    background-image: url('../public/images/logo/logo.svg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100px;
+} */

@@ -16,7 +16,10 @@
          <div class="header-menu">
             <div class="container-fluid">
                <nav class="navbar navbar-expand-lg fixed-top">
-                  <a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt=""></a>
+                  <a class="navbar-brand" href="#">
+                     <img class="img-fluid" src="images/logo/logo.png" alt="">
+                     {{-- <span class="logo-navbar"></span> --}}
+                  </a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
