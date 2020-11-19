@@ -45,10 +45,6 @@
                         <button class="custom-btn">Request Information</button>
                      </div>
                   </div>
-                  <div class="col-md-6">
-                     <div class="layer-photo">
-                     </div>
-                  </div>
                </div>
             </div>
          </div>

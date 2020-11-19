@@ -1057,6 +1057,106 @@ body {
     height: 200px;
     width: 100px;
 } */
+
+@media (min-width: 100px) and (max-width: 575px) {
+    .navbar-brand img {
+        max-width: 250px;
+    }
+    .featured .graphic img {
+        max-width: 275px;
+        margin: 0px 0px;
+        display: block;
+    }
+    .footerForm-block {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    .footerForm-block h3 {
+        font-family: 'Montserrat Bold';
+        font-size: 25px;
+        text-transform: capitalize;
+    }
+    #footerForm-block h6 {
+        font-family: 'Montserrat Medium';
+        padding: 10px 0px 0px 0px;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .fotter .contentWrap {
+        display: block;
+    }
+    .fotter .contentWrap .quicklinks {
+        border-left: 1px solid #e11d25;
+        padding-left: 0rem;
+        margin-top: 20px;
+    }
+    .fotter .contentWrap .quicklinks ul {
+        text-align: left;
+        padding-left: 15px;
+    }
+    .fotter .contentWrap .getintouch {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .getintouch p {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+    .header .row {
+        padding-top: 25%;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+    .header-text h2 {
+        font-size: 30px;
+    }
+    .footerForm-block {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .contentWrap .item.contact {
+        min-width: 200px;
+    }
+    .fotter .contentWrap .quicklinks {
+        padding-left: 0rem;
+    }
+    .fotter .quicklinks ul {
+        padding-left: 15px;
+        text-align: left;
+    }
+    .fotter .getintouch p {
+        margin: 0px;
+    }
+    .fotter .contentWrap .contact h2 a {
+        font-family: 'Montserrat Bold';
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .graphic .text-right {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .featured .graphic img {
+        max-width: 100%;
+    }
+    .footerForm-block {
+        padding-left: 30px !important;
+    }
+    .fotter .contentWrap .contact h2 {
+        margin-bottom: .25rem;
+        font-size: 26px;
+        font-family: 'Montserrat Bold';
+    }
+    .fotter .getintouch p {
+        margin: 0px;
+    }
+}
 /*!
  * Font Awesome Pro 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
