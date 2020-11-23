@@ -165,7 +165,7 @@
                   </button>
                </div>
                <div class="modal-body">
-                  <video height="auto" controls autoplay >
+                  <video height="auto" controls="true" loop id="modalVideo" >
                      <source src="{{asset('images/onesmarterLife.mp4')}}" type="video/mp4">
                    </video>
                </div>

@@ -907,3 +907,7 @@ body {
         margin: 0px;
     }
 }
+
+.row.footer-main.f-section {
+    width: 100% !important;
+}

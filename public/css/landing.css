@@ -1158,6 +1158,10 @@ body {
         margin: 0px;
     }
 }
+
+.row.footer-main.f-section {
+    width: 100% !important;
+}
 /*!
  * Font Awesome Pro 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
