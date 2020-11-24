@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 
+
+
 Route::get('/', 'Landing\LandingController@home')->name('home');
 Route::post('/contact-actions', 'Landing\LandingController@contactActions')->name('contact-actions');
 
